@@ -278,12 +278,7 @@ LLM 失败**不会**把报错文字混进正文（那段文本会直接喂给生
 
 放进去后刷新页面，`local_model` 下拉里就能选到。
 
-### 下载推荐（RTX 5060 Ti 16GB）
-
-```bash
-"E:\soft\ComfyUI_windows_portable\python_embeded\python.exe" download_llm.py
-"E:\soft\ComfyUI_windows_portable\python_embeded\python.exe" download_llm.py --mirror   # 国内走镜像
-```
+### 下载推荐 
 
 默认下 `Qwen3-4B-Instruct-2507-Q4_K_M`（约 2.5GB，中文强、指令跟随稳）。
 其它：`--preset qwen3-8b`（4.9GB）、`--repo org/name --file x.gguf` 自定义。
