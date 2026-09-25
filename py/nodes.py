@@ -690,64 +690,6 @@ class HammPromptPreview:
         }
 
 
-# ---------------------------------------------------------------- 执行开关
-RUN_SWITCH = ["开：继续生成图片", "关：只生成提示词（后面全部跳过）"]
-
-# ExecutionBlocker 是 ComfyUI 官方的「拦截下游执行」机制：某个输出口返回它，
-# 所有依赖这个输出的下游节点会被标记为 blocked（界面显示被跳过），上游照常执行。
-# 比 raise 中断优雅：不会打断队列里其它无关的执行分支。
-# 注意本机版本它放在 comfy_execution.graph_utils（旧版在 execution，两处都试）。
-try:
-    from comfy_execution.graph_utils import ExecutionBlocker as _ExecBlocker
-except Exception:
-    try:
-        from comfy_execution.execution import ExecutionBlocker as _ExecBlocker
-    except Exception:
-        _ExecBlocker = None
-try:
-    from comfy.model_management import InterruptProcessingException as _Interrupt
-except Exception:
-    _Interrupt = None
-
-
-class HammPromptGate:
-    """执行开关：串在提示词节点和 CLIP 编码之间。
-
-    开 = 原样透传，正常出图；
-    关 = 输出 ExecutionBlocker，下游（CLIP 编码 / KSampler / 保存图片）全部被跳过，
-    队列只运行到提示词生成为止 —— 省掉采样时间，专心调提示词。
-    """
-
-    @classmethod
-    def INPUT_TYPES(cls):
-        return {
-            "required": {
-                "run": (RUN_SWITCH, {"default": RUN_SWITCH[0]}),
-                "positive": ("STRING", {"forceInput": True}),
-            },
-            "optional": {
-                "negative": ("STRING", {"forceInput": True}),
-            },
-        }
-
-    RETURN_TYPES = ("STRING", "STRING")
-    RETURN_NAMES = ("positive", "negative")
-    FUNCTION = "build"
-    CATEGORY = "HammPrompt/工具"
-
-    def build(self, run, positive="", negative=""):
-        if run == RUN_SWITCH[1]:
-            msg = "Hamm 开关：关（只生成提示词，图片部分已跳过）"
-            if _ExecBlocker is not None:
-                b = _ExecBlocker(msg)
-                return (b, b)
-            if _Interrupt is not None:
-                print("[HammPrompt] " + msg)
-                raise _Interrupt()
-            raise RuntimeError(msg)
-        return (positive, negative)
-
-
 NODE_CLASS_MAPPINGS = {
     "HammLocalLLM": HammLocalLLM,
     "HammUnloadLLM": HammUnloadLLM,
@@ -756,7 +698,6 @@ NODE_CLASS_MAPPINGS = {
     "HammPromptVideo": HammPromptVideo,
     "HammPromptStoryboard": HammPromptStoryboard,
     "HammPromptPreview": HammPromptPreview,
-    "HammPromptGate": HammPromptGate,
     "HammImageMode": HammImageMode,
 }
 
@@ -768,6 +709,5 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "HammPromptVideo": "Hamm 视频提示词 (MiniMax H3)",
     "HammPromptStoryboard": "Hamm 分镜批量",
     "HammPromptPreview": "Hamm 提示词预览（中文）",
-    "HammPromptGate": "Hamm 执行开关（关=只出提示词）",
     "HammImageMode": "Hamm 生图模式切换（文生图/图生图）",
 }

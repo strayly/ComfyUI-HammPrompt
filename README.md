@@ -12,7 +12,6 @@
 | `Hamm 分镜批量` (HammPromptStoryboard) | HammPrompt/文生图 | 每行一句中文分镜 → 输出 prompt_lines / prompt（接 easy promptLine 可一次跑 N 镜） |
 | `Hamm 视频提示词` (HammPromptVideo) | HammPrompt/视频 | MiniMax H3 官方格式 → 输出 H3_prompt / prompt |
 | `Hamm 提示词预览（中文）` (HammPromptPreview) | HammPrompt/工具 | 独立预览面板：正向提示词可编辑文本框，零连线也能用 |
-| `Hamm 执行开关（关=只出提示词）` (HammPromptGate) | HammPrompt/工具 | 串在提示词节点和 CLIP 编码之间：开=正常出图；关=下游全部跳过，只跑到提示词生成为止 |
 | `Hamm 生图模式切换（文生图/图生图）` (HammImageMode) | HammPrompt/工具 | 下拉切「文生图 / 图生图」，决定 KSampler 吃 EmptyLatentImage 还是 VAEEncode 出的图 latent；纯后端节点，不依赖第三方 |
 
 提示词节点自身不显示多余文字，保持参数区干净 —— 但节点上有一个「结构化提示词」文本框（见下）。
