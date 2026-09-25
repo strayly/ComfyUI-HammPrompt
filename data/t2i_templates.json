@@ -1,0 +1,920 @@
+{
+  "meta": {
+    "name": "HammPrompt T2I templates",
+    "note": "zh 用于下拉显示，en 为拼进提示词的英文片段"
+  },
+  "style": [
+    {
+      "zh": "不指定",
+      "en": ""
+    },
+    {
+      "zh": "写实电影感（推荐）",
+      "en": "cinematic still, photorealistic, film grain, shallow depth of field"
+    },
+    {
+      "zh": "人像摄影",
+      "en": "portrait photography, natural skin texture, 85mm lens look, shallow depth of field"
+    },
+    {
+      "zh": "汉服人像写真",
+      "en": "hanfu portrait photography, natural light, realistic fabric weave"
+    },
+    {
+      "zh": "复古胶片",
+      "en": "vintage film photo, Kodachrome tones, faded highlights, 35mm grain"
+    },
+    {
+      "zh": "黑白摄影",
+      "en": "black and white photography, high contrast, dramatic shadows"
+    },
+    {
+      "zh": "时尚杂志大片",
+      "en": "fashion editorial photography, studio lighting, high key, vogue style"
+    },
+    {
+      "zh": "商业产品摄影",
+      "en": "commercial product photography, seamless background, soft box lighting"
+    },
+    {
+      "zh": "中国古典水墨",
+      "en": "Chinese classical ink wash painting, soft muted colors, generous negative space, rice paper texture"
+    },
+    {
+      "zh": "国风工笔重彩",
+      "en": "Chinese gongbi heavy-color painting, fine outlines, mineral pigments, silk texture"
+    },
+    {
+      "zh": "唐风仕女",
+      "en": "Tang dynasty court lady painting style, warm ochre palette, ornate patterns"
+    },
+    {
+      "zh": "宋韵清雅",
+      "en": "Song dynasty elegant literati painting, pale ink, restrained composition"
+    },
+    {
+      "zh": "敦煌壁画",
+      "en": "Dunhuang mural style, mineral pigments, flaking wall texture, apsara motifs"
+    },
+    {
+      "zh": "青花瓷纹样",
+      "en": "blue and white porcelain pattern, cobalt glaze, ceramic surface"
+    },
+    {
+      "zh": "工笔花鸟",
+      "en": "Chinese bird and flower painting, meticulous detail, silk mount"
+    },
+    {
+      "zh": "国漫动画风",
+      "en": "Chinese donghua animation style, smooth cel shading, soft glow"
+    },
+    {
+      "zh": "日式动漫",
+      "en": "anime style, cel shading, clean lines, vibrant colors"
+    },
+    {
+      "zh": "卡通",
+      "en": "cartoon style, bold outlines, flat vivid colors, clean shapes"
+    },
+    {
+      "zh": "迪士尼动画",
+      "en": "Disney animation style, expressive eyes, warm palette"
+    },
+    {
+      "zh": "吉卜力风",
+      "en": "Studio Ghibli style, hand painted background, soft watercolor sky"
+    },
+    {
+      "zh": "3D 皮克斯风",
+      "en": "3D rendered, Pixar style, soft subsurface scattering, rounded forms"
+    },
+    {
+      "zh": "3D 写实渲染",
+      "en": "3D render, octane render, physically based rendering, ultra detailed"
+    },
+    {
+      "zh": "粘土定格动画",
+      "en": "claymation, handmade clay texture, visible fingerprints"
+    },
+    {
+      "zh": "水彩手绘",
+      "en": "watercolor painting, wet on wet, soft edges, paper grain"
+    },
+    {
+      "zh": "厚涂油画",
+      "en": "oil painting, impasto brushstrokes, rich color, canvas texture"
+    },
+    {
+      "zh": "素描线稿",
+      "en": "pencil sketch, graphite lines, hatching shading, white paper"
+    },
+    {
+      "zh": "版画",
+      "en": "linocut print, bold black shapes, ink texture"
+    },
+    {
+      "zh": "浮世绘",
+      "en": "ukiyo-e woodblock print, flat color blocks, bold outlines"
+    },
+    {
+      "zh": "仙侠玄幻",
+      "en": "xianxia fantasy style, flowing ribbons, glowing spiritual energy, ethereal atmosphere"
+    },
+    {
+      "zh": "古风插画",
+      "en": "Chinese classical illustration, clean linework, soft gradient coloring"
+    },
+    {
+      "zh": "赛博朋克",
+      "en": "cyberpunk, neon lights, rain slick streets, high contrast teal and magenta"
+    },
+    {
+      "zh": "蒸汽波",
+      "en": "vaporwave aesthetic, pastel gradient, retro grid, VHS glow"
+    },
+    {
+      "zh": "蒸汽朋克",
+      "en": "steampunk, brass gears, Victorian machinery, warm amber light"
+    },
+    {
+      "zh": "暗黑哥特",
+      "en": "dark gothic, deep shadows, candle light, ornate decay"
+    },
+    {
+      "zh": "废土末日",
+      "en": "post apocalyptic, rusted metal, dust haze, muted palette"
+    },
+    {
+      "zh": "极简主义",
+      "en": "minimalist composition, limited palette, clean negative space"
+    },
+    {
+      "zh": "超现实主义",
+      "en": "surrealism, dreamlike elements, impossible geometry"
+    },
+    {
+      "zh": "像素艺术",
+      "en": "pixel art, 16 bit palette, clean pixels"
+    },
+    {
+      "zh": "毛毡手工风",
+      "en": "felt craft style, soft fuzzy texture, warm handmade look"
+    },
+    {
+      "zh": "乐高玩具风",
+      "en": "lego style, plastic bricks, glossy surface"
+    },
+    {
+      "zh": "概念设计稿",
+      "en": "concept art, matte painting, wide establishing composition"
+    },
+    {
+      "zh": "建筑可视化",
+      "en": "architectural visualization, crisp perspective, natural daylight"
+    }
+  ],
+  "scene": [
+    {
+      "zh": "不指定",
+      "en": ""
+    },
+    {
+      "zh": "江南古镇石桥",
+      "en": "on a mossy stone bridge in an ancient Jiangnan water town, canal houses along both banks"
+    },
+    {
+      "zh": "雨中长巷",
+      "en": "in a narrow rain slicked alley with grey brick walls and hanging lanterns"
+    },
+    {
+      "zh": "竹林深处",
+      "en": "deep inside a misty bamboo forest, filtered green light"
+    },
+    {
+      "zh": "庭院回廊",
+      "en": "in a classical courtyard with carved wooden corridors and moon gate"
+    },
+    {
+      "zh": "荷花池畔",
+      "en": "beside a lotus pond, stone railing, willow shade"
+    },
+    {
+      "zh": "雪山悬崖",
+      "en": "on a snow covered cliff edge, distant mountain range, thin air"
+    },
+    {
+      "zh": "沙漠驼队",
+      "en": "in a vast desert with drifting sand and a distant camel caravan"
+    },
+    {
+      "zh": "海边礁石",
+      "en": "on wave battered coastal rocks, sea spray, horizon glow"
+    },
+    {
+      "zh": "樱花树下",
+      "en": "under a blooming cherry blossom tree, petals drifting in the air"
+    },
+    {
+      "zh": "秋日枫林",
+      "en": "in an autumn maple forest, red leaves, warm slanting light"
+    },
+    {
+      "zh": "雪山温泉",
+      "en": "in a steaming hot spring surrounded by snow, drifting vapor"
+    },
+    {
+      "zh": "茶馆二楼",
+      "en": "on the second floor of an old teahouse, lattice windows, street noise below"
+    },
+    {
+      "zh": "皇宫大殿",
+      "en": "inside an imperial palace hall, red pillars, golden caisson ceiling"
+    },
+    {
+      "zh": "书斋案头",
+      "en": "in a scholar study, ink stone, brush rack, stacked books, paper window light"
+    },
+    {
+      "zh": "城楼黄昏",
+      "en": "atop an ancient city gate tower at dusk, tiled roofs stretching away"
+    },
+    {
+      "zh": "码头渡口",
+      "en": "at a river ferry dock, moored boats, wooden planks, morning mist"
+    },
+    {
+      "zh": "市集街市",
+      "en": "in a bustling old market street, cloth banners, hanging lanterns, stalls"
+    },
+    {
+      "zh": "芦苇荡",
+      "en": "in a windswept reed marsh, golden stalks, water channels"
+    },
+    {
+      "zh": "云海山巅",
+      "en": "on a mountain summit above a sea of clouds, thin golden rim light"
+    },
+    {
+      "zh": "古刹佛殿",
+      "en": "inside an ancient temple hall, incense smoke, dim warm light, carved beams"
+    },
+    {
+      "zh": "梅园雪景",
+      "en": "in a plum blossom garden after snow, red petals on white snow"
+    },
+    {
+      "zh": "现代都市夜景",
+      "en": "on a modern city street at night, wet asphalt reflections, neon signage"
+    },
+    {
+      "zh": "天台黄昏",
+      "en": "on a rooftop at golden hour, city skyline behind, wind in hair"
+    },
+    {
+      "zh": "咖啡馆窗边",
+      "en": "by the window of a quiet cafe, soft interior light, rain on glass"
+    },
+    {
+      "zh": "地铁车厢",
+      "en": "inside a subway carriage, flickering light, reflections on the window"
+    },
+    {
+      "zh": "废弃工厂",
+      "en": "inside an abandoned factory, broken skylights, dust beams, rusted machinery"
+    },
+    {
+      "zh": "图书馆书架间",
+      "en": "between tall library bookshelves, warm reading lamps, floating dust"
+    },
+    {
+      "zh": "玻璃温室",
+      "en": "inside a glass greenhouse, lush plants, diffused humid light"
+    },
+    {
+      "zh": "太空舱内",
+      "en": "inside a spacecraft cabin, control panels, cold instrument light"
+    },
+    {
+      "zh": "未来城市空中",
+      "en": "on a sky bridge of a futuristic city, flying vehicles, layered skyline"
+    },
+    {
+      "zh": "乡村麦田",
+      "en": "in a rural wheat field, golden stalks, open sky, distant farmhouse"
+    },
+    {
+      "zh": "湖畔木屋",
+      "en": "at a lakeside wooden cabin, still water reflection, morning fog"
+    },
+    {
+      "zh": "洞穴荧光",
+      "en": "inside a glowing cave, bioluminescent moss, dripping water"
+    },
+    {
+      "zh": "战场废墟",
+      "en": "in a ruined battlefield, smoke haze, broken banners, embers"
+    },
+    {
+      "zh": "舞台上",
+      "en": "on a theatrical stage, spotlight from above, dark audience beyond"
+    },
+    {
+      "zh": "列车车窗边",
+      "en": "beside a train window, passing landscape, reflections on the glass"
+    },
+    {
+      "zh": "花田",
+      "en": "in a flowering meadow, tall grass, soft breeze, blue sky"
+    },
+    {
+      "zh": "老宅天井",
+      "en": "in the skywell courtyard of an old mansion, vertical light shaft, mossy stones"
+    }
+  ],
+  "action": [
+    {
+      "zh": "不指定",
+      "en": ""
+    },
+    {
+      "zh": "静立远望",
+      "en": "standing still, gazing into the distance"
+    },
+    {
+      "zh": "缓步行走",
+      "en": "walking slowly forward"
+    },
+    {
+      "zh": "回眸一瞥",
+      "en": "glancing back over the shoulder"
+    },
+    {
+      "zh": "撑伞而立",
+      "en": "holding an oil-paper umbrella overhead"
+    },
+    {
+      "zh": "低头浅笑",
+      "en": "lowering the head with a faint smile"
+    },
+    {
+      "zh": "抬手拢发",
+      "en": "lifting one hand to tuck a strand of hair behind the ear"
+    },
+    {
+      "zh": "轻抚栏杆",
+      "en": "lightly tracing the surface of the stone railing with fingertips"
+    },
+    {
+      "zh": "抚琴",
+      "en": "playing a guqin with both hands on the strings"
+    },
+    {
+      "zh": "执笔写字",
+      "en": "writing with a brush on rice paper"
+    },
+    {
+      "zh": "斟茶",
+      "en": "pouring tea into a small cup from a ceramic pot"
+    },
+    {
+      "zh": "舞剑",
+      "en": "performing a sword dance with flowing movements"
+    },
+    {
+      "zh": "扬袖旋转",
+      "en": "spinning with sleeves flaring outward"
+    },
+    {
+      "zh": "撑船",
+      "en": "poling a small wooden boat along the canal"
+    },
+    {
+      "zh": "凭栏远眺",
+      "en": "leaning against the railing, looking far away"
+    },
+    {
+      "zh": "拾阶而下",
+      "en": "hurrying down a flight of stone steps"
+    },
+    {
+      "zh": "撑伞转身",
+      "en": "turning around while tilting the umbrella back"
+    },
+    {
+      "zh": "轻提裙摆",
+      "en": "lightly lifting the hem of the dress with both hands"
+    },
+    {
+      "zh": "执扇半遮面",
+      "en": "holding a folding fan that half covers the face"
+    },
+    {
+      "zh": "闭目闻香",
+      "en": "closing the eyes and inhaling slowly"
+    },
+    {
+      "zh": "伸手接雨",
+      "en": "extending one hand to catch falling rain"
+    },
+    {
+      "zh": "侧身回望",
+      "en": "turning the body three quarters and looking back"
+    },
+    {
+      "zh": "端坐品茗",
+      "en": "sitting upright and sipping tea"
+    },
+    {
+      "zh": "倚树小憩",
+      "en": "leaning against a tree, resting"
+    },
+    {
+      "zh": "奔跑",
+      "en": "running forward with hair and clothes streaming"
+    },
+    {
+      "zh": "转身离去",
+      "en": "turning and walking away from the camera"
+    },
+    {
+      "zh": "抬眸凝视镜头",
+      "en": "raising the eyes to look straight into the camera"
+    },
+    {
+      "zh": "双手交叠于身前",
+      "en": "standing with both hands folded in front"
+    },
+    {
+      "zh": "挥手作别",
+      "en": "waving one hand in farewell"
+    },
+    {
+      "zh": "举灯夜行",
+      "en": "holding a paper lantern while walking at night"
+    },
+    {
+      "zh": "翻看书信",
+      "en": "unfolding and reading a letter"
+    },
+    {
+      "zh": "系发带",
+      "en": "tying a hair ribbon with both hands"
+    },
+    {
+      "zh": "吹笛",
+      "en": "playing a bamboo flute"
+    },
+    {
+      "zh": "煮酒温盏",
+      "en": "warming a cup of wine over a small brazier"
+    },
+    {
+      "zh": "抱膝而坐",
+      "en": "sitting with knees drawn to the chest"
+    },
+    {
+      "zh": "推门而出",
+      "en": "pushing a wooden door open and stepping out"
+    },
+    {
+      "zh": "伸手触碰水面",
+      "en": "reaching down to touch the water surface"
+    },
+    {
+      "zh": "弯腰拾花",
+      "en": "bending down to pick up a fallen flower"
+    },
+    {
+      "zh": "抬头望月",
+      "en": "looking up at the moon"
+    },
+    {
+      "zh": "整理衣襟",
+      "en": "adjusting the collar of the robe"
+    }
+  ],
+  "shot": [
+    {
+      "zh": "不指定",
+      "en": ""
+    },
+    {
+      "zh": "大远景",
+      "en": "extreme wide shot"
+    },
+    {
+      "zh": "远景",
+      "en": "wide shot"
+    },
+    {
+      "zh": "全景全身",
+      "en": "full body shot"
+    },
+    {
+      "zh": "中景（腰以上）",
+      "en": "medium shot"
+    },
+    {
+      "zh": "中近景（胸以上）",
+      "en": "medium close-up"
+    },
+    {
+      "zh": "近景特写",
+      "en": "close-up"
+    },
+    {
+      "zh": "大特写（眼/手）",
+      "en": "extreme close-up"
+    },
+    {
+      "zh": "过肩镜头",
+      "en": "over the shoulder shot"
+    },
+    {
+      "zh": "低角度仰拍",
+      "en": "low angle shot looking up"
+    },
+    {
+      "zh": "高角度俯拍",
+      "en": "high angle shot looking down"
+    },
+    {
+      "zh": "平视正面",
+      "en": "eye level front view"
+    },
+    {
+      "zh": "侧面剪影",
+      "en": "side profile silhouette"
+    }
+  ],
+  "lighting": [
+    {
+      "zh": "不指定",
+      "en": ""
+    },
+    {
+      "zh": "柔和自然光",
+      "en": "soft natural lighting"
+    },
+    {
+      "zh": "清晨薄雾光",
+      "en": "soft early morning light with thin mist"
+    },
+    {
+      "zh": "阴天漫射光",
+      "en": "overcast diffused light"
+    },
+    {
+      "zh": "黄金时刻逆光",
+      "en": "golden hour backlight with warm rim light"
+    },
+    {
+      "zh": "黄昏暖光",
+      "en": "warm dusk light, low sun"
+    },
+    {
+      "zh": "窗边侧光",
+      "en": "directional side light from a window"
+    },
+    {
+      "zh": "林间光斑",
+      "en": "dappled light filtering through leaves"
+    },
+    {
+      "zh": "烛光",
+      "en": "warm candlelight, flickering shadows"
+    },
+    {
+      "zh": "灯笼暖光",
+      "en": "warm lantern glow, orange highlights"
+    },
+    {
+      "zh": "月光冷调",
+      "en": "cool moonlight, blue shadows"
+    },
+    {
+      "zh": "霓虹灯",
+      "en": "neon lighting with magenta and cyan reflections"
+    },
+    {
+      "zh": "舞台聚光",
+      "en": "single spotlight from above, dark surroundings"
+    },
+    {
+      "zh": "影棚柔光箱",
+      "en": "studio softbox lighting, even key light"
+    },
+    {
+      "zh": "伦勃朗光",
+      "en": "Rembrandt lighting, triangular cheek highlight"
+    },
+    {
+      "zh": "轮廓光",
+      "en": "strong rim light separating subject from background"
+    },
+    {
+      "zh": "硬光强对比",
+      "en": "hard light with deep contrast"
+    },
+    {
+      "zh": "雾气光束",
+      "en": "volumetric light beams through haze"
+    },
+    {
+      "zh": "水下光",
+      "en": "underwater caustic light patterns"
+    },
+    {
+      "zh": "火光",
+      "en": "firelight from below, dancing warm highlights"
+    },
+    {
+      "zh": "雪地反光",
+      "en": "bright snow bounce light, cool shadows"
+    },
+    {
+      "zh": "黄昏剪影光",
+      "en": "backlit silhouette against a sunset sky"
+    },
+    {
+      "zh": "室内暖黄",
+      "en": "warm indoor tungsten light"
+    },
+    {
+      "zh": "清晨蓝调",
+      "en": "cool blue hour light before sunrise"
+    }
+  ],
+  "mood": [
+    {
+      "zh": "不指定",
+      "en": ""
+    },
+    {
+      "zh": "静谧安详",
+      "en": "serene and quiet atmosphere"
+    },
+    {
+      "zh": "清冷孤寂",
+      "en": "lonely and cold atmosphere"
+    },
+    {
+      "zh": "温柔治愈",
+      "en": "gentle and healing atmosphere"
+    },
+    {
+      "zh": "悠远怅惘",
+      "en": "wistful and distant mood"
+    },
+    {
+      "zh": "庄重肃穆",
+      "en": "solemn and dignified mood"
+    },
+    {
+      "zh": "磅礴大气",
+      "en": "epic and grand atmosphere"
+    },
+    {
+      "zh": "神秘梦幻",
+      "en": "mysterious dreamlike atmosphere"
+    },
+    {
+      "zh": "紧张对峙",
+      "en": "tense standoff atmosphere"
+    },
+    {
+      "zh": "欢快明亮",
+      "en": "bright and cheerful mood"
+    },
+    {
+      "zh": "哀婉凄美",
+      "en": "melancholic and poignant mood"
+    },
+    {
+      "zh": "热血激昂",
+      "en": "intense and passionate mood"
+    },
+    {
+      "zh": "日常松弛",
+      "en": "relaxed everyday mood"
+    },
+    {
+      "zh": "禅意留白",
+      "en": "zen atmosphere with generous empty space"
+    },
+    {
+      "zh": "复古怀旧",
+      "en": "nostalgic retro mood"
+    },
+    {
+      "zh": "科技冷峻",
+      "en": "cold technological atmosphere"
+    },
+    {
+      "zh": "浪漫暧昧",
+      "en": "romantic and intimate atmosphere"
+    },
+    {
+      "zh": "阴森压抑",
+      "en": "oppressive gloomy atmosphere"
+    },
+    {
+      "zh": "空灵脱俗",
+      "en": "ethereal and otherworldly mood"
+    },
+    {
+      "zh": "市井烟火气",
+      "en": "lively everyday street life atmosphere"
+    }
+  ],
+  "quality": [
+    {
+      "zh": "通用高清（推荐）",
+      "en": "high detail, sharp focus, 8k"
+    },
+    {
+      "zh": "照片级",
+      "en": "photorealistic, ultra detailed skin texture, 8k"
+    },
+    {
+      "zh": "电影级",
+      "en": "cinematic composition, anamorphic bokeh, film grain, color graded"
+    },
+    {
+      "zh": "插画级",
+      "en": "clean illustration, crisp linework, high resolution"
+    },
+    {
+      "zh": "极简画质词",
+      "en": "high quality"
+    },
+    {
+      "zh": "细节强化",
+      "en": "intricate detail, fine texture, macro detail"
+    },
+    {
+      "zh": "柔和细腻",
+      "en": "soft rendering, smooth gradients, delicate detail"
+    },
+    {
+      "zh": "胶片质感",
+      "en": "35mm film, subtle grain, organic tonal rolloff"
+    },
+    {
+      "zh": "HDR",
+      "en": "HDR, wide dynamic range, vivid yet natural"
+    },
+    {
+      "zh": "不加画质词",
+      "en": ""
+    },
+    {
+      "zh": "竖屏短视频（9:16）",
+      "en": "vertical 9:16 composition, subject centered"
+    },
+    {
+      "zh": "横屏电影（16:9）",
+      "en": "widescreen 16:9 cinematic composition"
+    }
+  ],
+  "era": [
+    {
+      "zh": "不指定",
+      "en": ""
+    },
+    {
+      "zh": "远古",
+      "en": "prehistoric era setting, primitive period-accurate attire and props",
+      "desc": "人物与场景符合远古原始时代背景"
+    },
+    {
+      "zh": "先秦",
+      "en": "pre-Qin era setting, period-accurate pre-Qin attire and props",
+      "desc": "人物与场景符合先秦时代背景"
+    },
+    {
+      "zh": "秦汉",
+      "en": "Qin-Han dynasties (221 BC-220 AD) period, period-accurate Qin-Han attire and props",
+      "desc": "人物与场景符合秦汉时代背景"
+    },
+    {
+      "zh": "魏晋",
+      "en": "Wei-Jin era (220-420) period, period-accurate Wei-Jin attire and styling",
+      "desc": "人物与场景符合魏晋南北朝时代背景"
+    },
+    {
+      "zh": "唐",
+      "en": "Tang dynasty (618-907) period, period-accurate Tang attire, hairstyle and makeup",
+      "desc": "人物与场景符合唐代背景"
+    },
+    {
+      "zh": "宋",
+      "en": "Song dynasty (960-1279) period, period-accurate Song attire, hairstyle and makeup",
+      "desc": "人物与场景符合宋代背景"
+    },
+    {
+      "zh": "元",
+      "en": "Yuan dynasty (1271-1368) period, period-accurate Yuan attire and props",
+      "desc": "人物与场景符合元代背景"
+    },
+    {
+      "zh": "明",
+      "en": "Ming dynasty (1368-1644) period, period-accurate Ming attire, hairstyle and props",
+      "desc": "人物与场景符合明代背景"
+    },
+    {
+      "zh": "清",
+      "en": "Qing dynasty (1644-1912) period, period-accurate Qing attire, hairstyle and props",
+      "desc": "人物与场景符合清代背景"
+    },
+    {
+      "zh": "民国",
+      "en": "Republican China era (1912-1949), period-accurate Republican-era attire and props",
+      "desc": "人物与场景符合民国时期背景"
+    },
+    {
+      "zh": "近代",
+      "en": "early modern industrial era, period-accurate attire and props",
+      "desc": "人物与场景符合近代工业时代背景"
+    },
+    {
+      "zh": "50年代",
+      "en": "1950s period setting, period-accurate attire and props",
+      "desc": "人物与场景符合1950年代背景"
+    },
+    {
+      "zh": "60年代",
+      "en": "1960s period setting, period-accurate attire and props",
+      "desc": "人物与场景符合1960年代背景"
+    },
+    {
+      "zh": "70年代",
+      "en": "1970s period setting, period-accurate attire and props",
+      "desc": "人物与场景符合1970年代背景"
+    },
+    {
+      "zh": "80年代",
+      "en": "1980s period setting, period-accurate attire and props",
+      "desc": "人物与场景符合1980年代背景"
+    },
+    {
+      "zh": "90年代",
+      "en": "1990s period setting, period-accurate attire and props",
+      "desc": "人物与场景符合1990年代背景"
+    },
+    {
+      "zh": "现代",
+      "en": "contemporary present-day setting, modern everyday attire",
+      "desc": "人物与场景符合当代现实背景"
+    },
+    {
+      "zh": "近未来",
+      "en": "near-future setting, plausible near-future attire and technology",
+      "desc": "人物与场景符合近未来背景"
+    },
+    {
+      "zh": "废土末世",
+      "en": "post-apocalyptic wasteland setting, scavenged survival gear",
+      "desc": "人物与场景符合废土末世世界观"
+    },
+    {
+      "zh": "星际时代",
+      "en": "interstellar space-age setting, spacesuit or starship attire",
+      "desc": "人物与场景符合星际太空时代背景"
+    }
+  ],
+  "negative": [
+    {
+      "zh": "通用",
+      "en": "low quality, worst quality, blurry, jpeg artifacts, watermark, signature, text, error"
+    },
+    {
+      "zh": "人物通用",
+      "en": "low quality, blurry, bad anatomy, bad hands, extra fingers, extra limbs, deformed, mutated, cross-eyed, watermark"
+    },
+    {
+      "zh": "古风人物",
+      "en": "low quality, blurry, bad anatomy, extra fingers, modern clothing, zippers, denim, sunglasses, watermark, text"
+    },
+    {
+      "zh": "写实人像",
+      "en": "low quality, plastic skin, over-smoothed face, bad teeth, bad eyes, extra fingers, watermark"
+    },
+    {
+      "zh": "插画",
+      "en": "low quality, blurry, messy linework, muddy colors, watermark, text"
+    },
+    {
+      "zh": "3D 渲染",
+      "en": "low poly, blurry, baked lighting artifacts, watermark, text"
+    },
+    {
+      "zh": "空",
+      "en": ""
+    },
+    {
+      "zh": "防多格漫画",
+      "en": "multiple panels, comic grid, split screen, duplicated subject"
+    }
+  ]
+}

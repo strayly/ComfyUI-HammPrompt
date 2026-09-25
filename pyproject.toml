@@ -1,0 +1,12 @@
+[project]
+name = "comfyui-hammprompt"
+description = "中文写提示词 / 英文给模型 的 ComfyUI 节点套装：文生图、图生提示词、视频(MiniMax H3)、分镜批量、中文预览、执行开关"
+version = "1.0.0"
+license = { text = "MIT" }
+authors = [{ name = "strayly" }]
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/strayly/ComfyUI-HammPrompt"
+
+[tool.comfy.NodeFrontend]

@@ -1,0 +1,20 @@
+# Byte-compiled / cache
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# Local dev / debug tooling (not part of the published node)
+_verify/
+
+# ComfyUI / model assets
+*.gguf
+*.safetensors
+models/
+
+# Project memory / IDE
+.workbuddy/
+
+# OS
+Thumbs.db
+.DS_Store

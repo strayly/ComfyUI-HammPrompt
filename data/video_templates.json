@@ -1,0 +1,133 @@
+{
+  "meta": {
+    "name": "HammPrompt Video templates",
+    "note": "H3 官方风格取自 MiniMax H3 Video Prompt Writing Guide (base-en.txt) 第 4.1 节；运镜取自第 4.3 节官方词汇表"
+  },
+  "mode": [
+    {"zh": "T2VA 纯文生视频", "en": "T2VA"},
+    {"zh": "I2VA 首帧生视频（图生视频）", "en": "I2VA"},
+    {"zh": "FL2VA 首尾帧生视频", "en": "FL2VA"},
+    {"zh": "L2VA 尾帧生视频", "en": "L2VA"}
+  ],
+  "style": [
+    {"zh": "Live-action 真人实拍（官方）", "en": "Live-action"},
+    {"zh": "Cinematic 电影感（官方）", "en": "Cinematic"},
+    {"zh": "2D-animated 二维动画（官方）", "en": "2D-animated"},
+    {"zh": "3D CG 三维（官方）", "en": "3D CG"},
+    {"zh": "Claymation 粘土动画（官方）", "en": "Claymation"},
+    {"zh": "Watercolor 水彩（官方）", "en": "Watercolor"},
+    {"zh": "Vintage film 老胶片（官方）", "en": "Vintage film"},
+    {"zh": "中国古风真人（扩展）", "en": "Live-action, cinematic, Chinese classical period drama"},
+    {"zh": "国风动画（扩展）", "en": "2D-animated, Chinese donghua style, ink wash backgrounds"},
+    {"zh": "水墨晕染（扩展）", "en": "Watercolor, Chinese ink wash, flowing ink diffusion"},
+    {"zh": "仙侠玄幻（扩展）", "en": "Cinematic, xianxia fantasy, glowing spiritual effects"},
+    {"zh": "武侠动作（扩展）", "en": "Live-action, wuxia action, wire work, dust and motion blur"},
+    {"zh": "赛博朋克（扩展）", "en": "Cinematic, cyberpunk, neon reflections and rain"},
+    {"zh": "纪实纪录（扩展）", "en": "Live-action, documentary handheld, natural available light"},
+    {"zh": "MV 质感（扩展）", "en": "Cinematic, music video look, stylized color grading"},
+    {"zh": "广告质感（扩展）", "en": "Cinematic, commercial look, clean studio lighting"},
+    {"zh": "复古港片（扩展）", "en": "Vintage film, 1990s Hong Kong cinema, warm haze"},
+    {"zh": "黑白艺术（扩展）", "en": "Cinematic, black and white, high contrast"},
+    {"zh": "毛毡定格（扩展）", "en": "Claymation, felt stop motion, soft handmade texture"},
+    {"zh": "像素游戏（扩展）", "en": "2D-animated, pixel art game sprites, limited palette"},
+    {"zh": "绘本童趣（扩展）", "en": "Watercolor, children's picture book, soft pastel"},
+    {"zh": "科幻硬核（扩展）", "en": "Cinematic, hard sci-fi, clean metallic surfaces, cold light"}
+  ],
+  "camera_motion": [
+    {"zh": "不指定", "en": ""},
+    {"zh": "Zoom In 变焦推近", "en": "zooms in"},
+    {"zh": "Zoom Out 变焦拉远", "en": "zooms out"},
+    {"zh": "Push In 前推（镜头前移）", "en": "pushes in"},
+    {"zh": "Pull Out 后拉（镜头后移）", "en": "pulls out"},
+    {"zh": "Pan Left 左摇", "en": "pans left"},
+    {"zh": "Pan Right 右摇", "en": "pans right"},
+    {"zh": "Truck Left 左移", "en": "trucks left"},
+    {"zh": "Truck Right 右移", "en": "trucks right"},
+    {"zh": "Tilt Up 上摇", "en": "tilts up"},
+    {"zh": "Tilt Down 下摇", "en": "tilts down"},
+    {"zh": "Pedestal Up 上升", "en": "pedestals up"},
+    {"zh": "Pedestal Down 下降", "en": "pedestals down"},
+    {"zh": "Arc Shot 环绕", "en": "moves in an arc around the subject"},
+    {"zh": "Tracking Shot 跟拍", "en": "tracks the moving subject"},
+    {"zh": "Static Shot 固定", "en": "holds a static shot"},
+    {"zh": "Shake Slightly 轻微抖动", "en": "shakes slightly"},
+    {"zh": "Shake Strongly 强烈抖动", "en": "shakes strongly"},
+    {"zh": "POV 主观视角", "en": "shoots from the subject's point of view"},
+    {"zh": "Roll Clockwise 顺时针滚转", "en": "rolls clockwise"},
+    {"zh": "Roll Counterclockwise 逆时针滚转", "en": "rolls counterclockwise"}
+  ],
+  "amplitude": [
+    {"zh": "不写（默认中等）", "en": ""},
+    {"zh": "with small amplitude 小幅", "en": "with small amplitude"},
+    {"zh": "with large amplitude 大幅", "en": "with large amplitude"}
+  ],
+  "speed": [
+    {"zh": "不写（默认常速）", "en": ""},
+    {"zh": "at slow speed 慢速", "en": "at slow speed"},
+    {"zh": "at fast speed 快速", "en": "at fast speed"}
+  ],
+  "shot_size": [
+    {"zh": "不指定", "en": ""},
+    {"zh": "extreme wide shot 大远景", "en": "an extreme wide shot frames"},
+    {"zh": "wide shot 远景", "en": "a wide shot frames"},
+    {"zh": "medium-wide shot 中远景", "en": "a medium-wide shot frames"},
+    {"zh": "full shot 全景", "en": "a full shot frames"},
+    {"zh": "medium shot 中景", "en": "a medium shot frames"},
+    {"zh": "medium close-up 中近景", "en": "a medium close-up frames"},
+    {"zh": "close-up 近景", "en": "a close-up frames"},
+    {"zh": "extreme close-up 大特写", "en": "an extreme close-up frames"},
+    {"zh": "over-the-shoulder 过肩", "en": "an over-the-shoulder shot frames"},
+    {"zh": "low angle 仰拍", "en": "a low angle shot frames"},
+    {"zh": "high angle 俯拍", "en": "a high angle shot frames"},
+    {"zh": "POV 主观", "en": "a point-of-view shot frames"}
+  ],
+  "transition": [
+    {"zh": "硬切（默认）", "en": "the camera cuts to"},
+    {"zh": "镜头切换", "en": "the shot cuts to"},
+    {"zh": "转场到", "en": "the shot transitions to"},
+    {"zh": "画面变为", "en": "the shot changes to"},
+    {"zh": "切换到", "en": "the shot switches to"},
+    {"zh": "交叉溶解", "en": "the shot cross-dissolves to"},
+    {"zh": "淡入淡出", "en": "the shot fades to"},
+    {"zh": "划变", "en": "the shot wipes to"}
+  ],
+  "soundscape": [
+    {"zh": "不指定", "en": ""},
+    {"zh": "雨声古镇", "en": "Steady rain taps against roof tiles and stone while distant water laps against the canal bank."},
+    {"zh": "竹林风声", "en": "Wind moves through bamboo stalks with dry leaf rustle and occasional bird calls."},
+    {"zh": "市集人声", "en": "Layers of distant vendor calls, footstep scuffs on stone, and the clink of ceramic bowls."},
+    {"zh": "室内安静", "en": "Low room ambience with the soft creak of floorboards and fabric movement."},
+    {"zh": "水边清晨", "en": "Gentle water lapping, faint mist drip, and sparse morning birdsong."},
+    {"zh": "雪落无声", "en": "Near silence broken only by the crunch of snow underfoot and cold wind."},
+    {"zh": "夜虫鸣", "en": "Continuous cricket chirps with a low night ambience and occasional distant dog bark."},
+    {"zh": "城市街道", "en": "Passing traffic hum, distant horns, and footsteps on wet pavement."},
+    {"zh": "咖啡馆", "en": "Espresso machine hiss, cup clinks, and muffled conversation around the room."},
+    {"zh": "车厢运行", "en": "A steady metallic wheel rhythm beneath a low ventilation hum."},
+    {"zh": "火堆噼啪", "en": "Fire crackles with popping embers and the soft shift of burning wood."},
+    {"zh": "海边浪声", "en": "Waves break against the rocks with spray hiss and receding gravel."},
+    {"zh": "战斗余韵", "en": "Distant echoes of impact, settling dust, and heavy breathing."},
+    {"zh": "完全静音", "en": "N/A"}
+  ],
+  "music": [
+    {"zh": "不指定", "en": ""},
+    {"zh": "无配乐", "en": "N/A"},
+    {"zh": "古筝舒缓", "en": "Sparse guzheng arpeggios at a slow tempo with a sustained low drone underneath."},
+    {"zh": "二胡悠扬", "en": "A solo erhu line at a slow tempo, joined by soft plucked strings in the middle."},
+    {"zh": "笛箫空灵", "en": "A breathy bamboo flute melody at a slow tempo over airy sustained pads."},
+    {"zh": "钢琴极简", "en": "Sparse piano notes at a slow tempo with long sustain and a gentle fade."},
+    {"zh": "大提琴低沉", "en": "Sustained cello notes at a slow tempo, gradually decreasing in volume."},
+    {"zh": "弦乐渐起", "en": "Low sustained strings rising slowly in volume, joined by high sustained violins."},
+    {"zh": "鼓点紧张", "en": "A steady low drum pulse at a moderate tempo, accelerating slightly toward the end."},
+    {"zh": "电子脉冲", "en": "A low electronic pulse at a slow tempo with filtered synth sweeps."},
+    {"zh": "合成器氛围", "en": "Wide sustained synth pads at a slow tempo with a slow filter opening."},
+    {"zh": "吉他轻快", "en": "A soft acoustic-guitar pattern at a moderate tempo with upright-bass notes."},
+    {"zh": "民谣温暖", "en": "Warm folk instrumentation at a moderate tempo with light percussion."},
+    {"zh": "史诗管弦", "en": "Full orchestral swells at a moderate tempo with brass accents and a final sustained chord."}
+  ],
+  "dialogue_lang": [
+    {"zh": "无对白", "en": ""},
+    {"zh": "中文", "en": "[Chinese]"},
+    {"zh": "英文", "en": "[English]"},
+    {"zh": "日文", "en": "[Japanese]"}
+  ]
+}
